@@ -1,0 +1,69 @@
+.commits-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.commits-list {
+  background: #161b22;
+  border: 1px solid #21262d;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.commit-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  border-bottom: 1px solid #21262d;
+}
+
+.commit-row:last-child {
+  border-bottom: none;
+}
+
+.commit-row:hover {
+  background: #1c2128;
+}
+
+.commit-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.commit-message {
+  font-size: 14px;
+  color: #e1e4e8;
+}
+
+.commit-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 12px;
+}
+
+.commit-author {
+  color: #8b949e;
+}
+
+.commit-branch {
+  color: #58a6ff;
+  background: #58a6ff15;
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.commit-date {
+  color: #8b949e;
+}
+
+.commit-hash {
+  font-size: 13px;
+  color: #58a6ff;
+  background: #58a6ff10;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}

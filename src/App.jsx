@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Sidebar from './components/Sidebar'
 import Overview from './pages/Overview'
+import Commits from './pages/Commits'
 import './App.css'
 
 function App() {
@@ -10,6 +11,8 @@ function App() {
     switch (activePage) {
       case 'Overview':
         return <Overview />
+      case 'Commits':
+        return <Commits />
       default:
         return <p style={{ color: '#8b949e' }}>Coming soon...</p>
     }
