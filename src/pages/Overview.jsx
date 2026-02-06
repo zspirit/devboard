@@ -1,6 +1,7 @@
 import StatCard from '../components/StatCard'
 import CommitChart from '../components/CommitChart'
 import DeployChart from '../components/DeployChart'
+import ActivityFeed from '../components/ActivityFeed'
 import { stats } from '../data/mockData'
 import './Overview.css'
 
@@ -16,6 +17,7 @@ function Overview() {
         <CommitChart />
         <DeployChart />
       </div>
+      <ActivityFeed />
     </div>
   )
 }
