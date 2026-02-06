@@ -1,4 +1,5 @@
 import StatCard from '../components/StatCard'
+import CommitChart from '../components/CommitChart'
 import { stats } from '../data/mockData'
 import './Overview.css'
 
@@ -10,6 +11,7 @@ function Overview() {
           <StatCard key={stat.label} {...stat} />
         ))}
       </div>
+      <CommitChart />
     </div>
   )
 }
