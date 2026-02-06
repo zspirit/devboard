@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Sidebar from './components/Sidebar'
 import Overview from './pages/Overview'
 import Commits from './pages/Commits'
+import Deployments from './pages/Deployments'
 import './App.css'
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
         return <Overview />
       case 'Commits':
         return <Commits />
+      case 'Deployments':
+        return <Deployments />
       default:
         return <p style={{ color: '#8b949e' }}>Coming soon...</p>
     }
